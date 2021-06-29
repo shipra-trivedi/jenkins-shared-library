@@ -1,18 +1,9 @@
 package com.mcnz
-
-public class uatInput {
-
-  def buildIsUatApproved() {
-    def file = new File("C:/_tools/approved.txt")
-    
-    if (file.exists()){
-      return true;
-    }
-    else {
-      println "Approval file does not exist."
-    }
-    
-    return false;
-  }
-
+import java.io.File 
+class Example { 
+   static void main(String[] args) { 
+      new File("abc.txt").eachLine {  
+         line -> print "$line"; 
+      } 
+   } 
 }
